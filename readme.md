@@ -1,4 +1,6 @@
-![image](https://github.com/nabihandres/vestek_matlab_simscape/assets/78496021/9eec25c2-7917-4fd9-9a37-cae6d15ef1ec)# The parameters of the Vestek robot 
+![image](https://github.com/nabihandres/vestek_matlab_simscape/assets/78496021/9eec25c2-7917-4fd9-9a37-cae6d15ef1ec)
+
+# The parameters of the Vestek robot 
 ![image](https://github.com/nabihandres/vestek_matlab_simscape/assets/78496021/0a564183-6570-47a4-b86f-174fa8a83f62)
 
 | parameters | value || parameters | value | 
@@ -6,7 +8,7 @@
 | l1(m) | 0.176 || W1(m) | 0.6 | 
 | l2(m) | 0.176 || L1(m) | 0.7 |
 | l3(m) | 0.29 || H1(m) | 0.268 |
-| l4(m) | 0.451 || W2(m) | 0.5 | 
+| l4(m) | 0.451 || W2(m) | 0.25 | 
 | l5(m) | 0.495 ||L2(m) | 0.7 |
 | l6(m) | 0.12 ||H2(m) | 0.182 |
 | l7(m) | 0.055 || W3(m) | 0.5 | 
@@ -55,7 +57,7 @@
    - Cross-section : [-0.3 0.2; -0.3 -0.068; -0.124 -0.068; -0.124 -0.23; 0.124 -0.23; 0.124 -0.068; 0.3 -0.068; 0.3 0.2]
      It have to be written the points with counter-clockwise. Each points are separated with ; like [x1,y1;x2,y2;x3,y3]
    - Length : 0.695
-* Ienertia
+* Inertia
    - Type : Calculate from Geometry
    - Based on : Mass
    - Mass : 80
@@ -115,15 +117,15 @@
   - Put the Bound of the upper and lower limit as +14.5 and -14.5 deg.
 
 * Bogie
-  - Bogie is made with Exturuded Solid. Cross-Section is [-0.127 0.03; -0.17 -0.155; -0.13 -0.155; -0.088 -0.025; 0.088 -0.025; 0.13 -0.155; 0.17 -0.155; 0.127 0.03] and Length is 0.09m. [0,0] is the center of frame R so the axis of this is frame R
-  - The offset of Rigid transform by F is [0 0 0.045] and the other is [0 0 0.055]
+  - Bogie is made with Exturuded Solid. Cross-Section is [-0.127 0.03; -0.17 -0.155; -0.13 -0.155; -0.088 -0.025; 0.088 -0.025; 0.13 -0.155; 0.17 -0.155; 0.127 0.03] and Length is 0.073m. [0,0] is the center of frame R so the axis of this is frame R
+  - The offset of Rigid transform by F is [0 0 0.082] and the other is [0 0 0.06]
        
 ![image](https://github.com/nabihandres/vestek_matlab_simscape/assets/78496021/e1220919-2470-40b3-84de-9b99579e20c6)
        
 ### 4. Wheels
   
  * L-1
-     - This is the Rigid Transform to set the axis of the left front wheel. B is the center of the left bogie and offset is [0.145 -0.1 0]. For left middle wheel [-0.145 -0.1 0]. Right wheels are also same for each position. But in rear wheels, B is the bottom center of the chassis so left offset is [0 -0.295 0.224] and right offset is [0 -0.295 -0.224].
+     - This is the Rigid Transform to set the axis of the left front wheel. B is the center of the left bogie and offset is [0.145 -0.1 0]. For left middle wheel [-0.145 -0.1 0]. Right wheels are also same for each position. But in rear wheels, B is the bottom center of the chassis so left offset is [0 -0.295 0.266] and right offset is [0 -0.295 -0.266].
  * Joint L-1
     - This revolute joint makes the rotation of wheels so these are provided actuation motion input and torques are automatically computed.
 
