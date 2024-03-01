@@ -1,4 +1,4 @@
-![image](https://github.com/nabihandres/vestek_matlab_simscape/assets/78496021/9eec25c2-7917-4fd9-9a37-cae6d15ef1ec)
+![image](https://github.com/ak5124/bogie_mobile_robot_simulation_tutorial/assets/78496021/8f31ab06-204c-4889-be15-785a8dc779f8)
 
 # The parameters of the Vestek robot 
 ![image](https://github.com/nabihandres/vestek_matlab_simscape/assets/78496021/0a564183-6570-47a4-b86f-174fa8a83f62)
